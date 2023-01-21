@@ -40,3 +40,5 @@ jobs:
           WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
         run: |
           python manage.py test core.tests
+      - name: Run deplot
+        run: git pull origin main
